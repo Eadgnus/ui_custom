@@ -1,0 +1,18 @@
+<RCC>
+  <qresource>
+    <file>next_2.png</file>
+    <file>past_2.png</file>
+    <file>next.png</file>
+    <file>past.png</file>
+    <file>folder.png</file>
+    <file>close.png</file>
+    <file>logo_1.png</file>
+    <file>main_1.png</file>
+    <file>logo.jpg</file>
+    <file>main_2.png</file>
+    <file>pencil_1.png</file>
+    <file>pencil_2.png</file>
+    <file>save_1.png</file>
+    <file>save_2.png</file>
+  </qresource>
+</RCC>
