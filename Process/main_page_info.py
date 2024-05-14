@@ -7,12 +7,14 @@ class Main_page_info:
 
     def update_folder_path(self, path):
         self.folder_path = path
+        self.update_img_list()
 
     def get_folder_path(self):
         return self.folder_path
 
     def update_img_list(self):
-        self.img_list = os.listdir(self.folder_path)
+        img_list = os.listdir(self.folder_path)
+        self.img_list = [x for x in img_list if x.endswith(("jpg", "png", "jpeg"))]
 
     def get_img_list(self):
         return self.img_list
