@@ -63,17 +63,38 @@ def save_project():
     folder_path = QFileDialog.getExistingDirectory()
     with open(f'{folder_path}/save.pkl', 'wb') as f:
         pickle.dump(label_info, f)
+        print(f'{"*" * 20}Save{"*" * 20}')
+        print(f"len_label_info.img_full_path: {len(label_info.img_full_path)}")
+        if len(label_info.labeled) > 0:
+            print(f"label_info.labels: {label_info.labels}")
+            print(f"label_info.labeled: {label_info.labeled}")
+            print(f"label_info.rect_list: {label_info.rect_list}")
+
+        if len(label_info.labeled2) > 0:
+            print(f"label_info.labels2: {label_info.labels2}")
+            print(f"label_info.labeled2: {label_info.labeled2}")
+        print(f'{"*" * 20}----{"*" * 20}')
+        print("저장되었습니다.")
 
 def open_project(file_path):
     global label_info
     # 파일로부터 객체 역직렬화 및 불러오기
     with open(file_path, 'rb') as f:
         label_info = pickle.load(f)
+        label_info.update_class()
+        label_info.update_labels()
         print(f'{"*" * 20}Utils{"*" * 20}')
         print(f"len_label_info.img_full_path: {len(label_info.img_full_path)}")
-        print(f"label_info.labels: {label_info.labels}")
-        print(f"label_info.labeled: {label_info.labeled}")
-        print(f"label_info.rect_list: {label_info.rect_list}")
+        print("")
+        if len(label_info.labeled) > 0:
+            print(f"label_info.labels: {label_info.labels}")
+            print(f"label_info.labeled: {label_info.labeled}")
+        else:
+            print("저장된 데이터가 없습니다.")
+        if len(label_info.labeled2) > 0:
+            print("")
+            print(f"label_info.labels2: {label_info.labels2}")
+            print(f"label_info.labeled2: {label_info.labeled2}")
         print(f'{"*" * 20}----{"*" * 20}')
 
 def next_button():

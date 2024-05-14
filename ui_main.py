@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainRkpXeP.ui'
+## Form generated from reading UI file 'mainSAErum.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.3
 ##
@@ -17,8 +17,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QCommandLinkButton, QGraphicsView, QGridLayout,
     QLabel, QLayout, QLineEdit, QListWidget,
-    QListWidgetItem, QMainWindow, QPushButton, QSizePolicy,
-    QStackedWidget, QVBoxLayout, QWidget)
+    QListWidgetItem, QMainWindow, QPushButton, QRadioButton,
+    QSizePolicy, QStackedWidget, QVBoxLayout, QWidget)
 import resource_rc
 
 class Ui_MainWindow(object):
@@ -304,6 +304,10 @@ class Ui_MainWindow(object):
         self.labeling_list_view_2 = QListWidget(self.LabelingPage)
         self.labeling_list_view_2.setObjectName(u"labeling_list_view_2")
         self.labeling_list_view_2.setGeometry(QRect(125, 40, 121, 111))
+        self.labeling_list_view_2_check = QRadioButton(self.LabelingPage)
+        self.labeling_list_view_2_check.setObjectName(u"labeling_list_view_2_check")
+        self.labeling_list_view_2_check.setGeometry(QRect(230, 10, 16, 21))
+        self.labeling_list_view_2_check.setChecked(True)
         self.page_container.addWidget(self.LabelingPage)
 
         self.page_layout.addWidget(self.page_container)
@@ -431,6 +435,7 @@ class Ui_MainWindow(object):
         self.label_delete_button.setText(QCoreApplication.translate("MainWindow", u"\uc0ad\uc81c", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Labeled Data", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Labeled", None))
+        self.labeling_list_view_2_check.setText("")
         self.logo_1.setText("")
         self.main_button_1.setText("")
         self.labeling_button_1.setText("")

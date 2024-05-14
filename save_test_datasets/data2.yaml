@@ -1,0 +1,6 @@
+train: C:/Users/sosoe/Desktop/UI_custom/save_test_datasets/train/images
+valid: C:/Users/sosoe/Desktop/UI_custom/save_test_datasets/valid/images
+test: C:/Users/sosoe/Desktop/UI_custom/save_test_datasets/valid/images
+
+nc: 1
+names: ['70']

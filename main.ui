@@ -373,7 +373,7 @@ margin-right: 0px;</string>
          <string notr="true">background-color: rgb(255, 255, 255);</string>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="MainPage">
          <property name="styleSheet">
@@ -709,6 +709,22 @@ QPushButton:clicked{
             <width>121</width>
             <height>111</height>
            </rect>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="labeling_list_view_2_check">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>10</y>
+            <width>16</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
           </property>
          </widget>
         </widget>
